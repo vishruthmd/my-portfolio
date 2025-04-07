@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+body {
+    font-family: 'Geist Mono', sans-serif;
+    background-color: #222831;
+    color: #ffdbbb;
+    scroll-behavior: smooth;
+}
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #222831;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+    border-bottom: 1px solid #ffdbbb;
+} 
+nav h1 {
+    font-size: 24px;
+    color: #ffdbbb;
+} 
+nav ul {
+    display: flex;
+    list-style: none;
+} 
+nav ul li {
+    margin-left: 20px;
+} 
+nav ul li a {
+    text-decoration: none;
+    color: #ffdbbb;
+    transition: color 0.3s;
+} 
+nav ul li a:hover {
+    color: #ffd59c;
+}
+section {
+    height: 100vh;
+    padding: 100px 40px 40px;
+    background-color: #222831;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+    width: 60%;
+} 
+.skill {
+    background-color: #393e46;
+    padding: 20px;
+    border-radius: 10px;
+    color: #ffdbbb;
+    border: 1px solid #ffdbbb;
+    transition: transform 0.3s ease, background 0.3s ease;
+} 
+.skill:hover {
+    background-color: #4c535c;
+    transform: scale(1.05);
+}
+.reveal-card {
+    margin-top: 40px;
+    width: 300px;
+    height: 200px;
+    border-radius: 10px;
+    background-color: #393e46;
+    border: 1px solid #ffdbbb;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+} 
+.reveal-card .content {
+    position: absolute;
+    bottom: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 219, 187, 0.1);
+    color: #ffdbbb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: bottom 0.4s ease;
+} 
+.reveal-card:hover .content {
+    bottom: 0;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin-top: 20px;
+} 
+form input,
+form textarea {
+    font-family: 'Geist Mono', sans-serif;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ffdbbb;
+    border-radius: 5px;
+    background-color: #393e46;
+    color: #ffdbbb;
+} 
+form button {
+    padding: 10px;
+    background-color: #ffdbbb;
+    color: #222831;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+} 
+form button:hover {
+    background-color: #ffd59c;
+}
+#projects {
+    background-color: #222831;
+}
+  
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+    width: 90%;
+    max-width: 1000px;
+}
+  
+.project-card {
+    background-color: #393e46;
+    border: 1px solid #ffdbbb;
+    padding: 25px;
+    border-radius: 12px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+  
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(255, 219, 187, 0.2);
+}
+  
+.project-card h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #ffdbbb;
+}
+  
+.project-card p {
+    font-size: 14px;
+    color: #ffdbbb;
+    margin-bottom: 15px;
+}
+  
+.project-card a {
+    color: #222831;
+    background-color: #ffdbbb;
+    text-decoration: none;
+    padding: 8px 15px;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+  
+.project-card a:hover {
+    background-color: #ffd59c;
+}
+
+
+  
+  
